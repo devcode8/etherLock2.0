@@ -2,6 +2,7 @@ import React from "react";
 import GradientBackground from "../../components/GradientBackground";
 import HeroSection from "../../components/HeroSection";
 
+
 const Home = () => {
   return (
     <div
@@ -10,6 +11,7 @@ const Home = () => {
     >
       <GradientBackground />
       <HeroSection />
+    
     </div>
   );
 };
