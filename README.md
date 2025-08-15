@@ -1,70 +1,137 @@
-# Getting Started with Create React App
+# EtherLock 2.0
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, blockchain-inspired file storage and management platform built with React. EtherLock provides a sleek interface for secure digital asset protection with advanced eVault technology.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Modern UI/UX**: Clean, gradient-based design with glassmorphism effects
+- **File Management**: Upload, view, and organize your digital files
+- **User Authentication**: Secure sign-in and sign-up functionality
+- **File Information**: Detailed file metadata including IPFS hash integration
+- **Responsive Design**: Optimized for all screen sizes
+- **Blockchain Integration**: IPFS-based file storage references
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React 18.2.0
+- **Routing**: React Router DOM 6.22.3
+- **Styling**: Tailwind CSS 3.4.1
+- **Icons**: React Icons 5.0.1
+- **Build Tool**: Create React App
+- **Testing**: Jest & React Testing Library
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📁 Project Structure
 
-### `npm test`
+```
+etherLock2.0/
+├── public/                 # Static assets
+├── src/
+│   ├── assets/            # Images and media files
+│   ├── components/        # Reusable React components
+│   │   ├── GradientBackground.jsx
+│   │   └── HeroSection.jsx
+│   ├── pages/             # Page components
+│   │   ├── home/          # Landing page
+│   │   ├── signin/        # Authentication
+│   │   ├── signup/        # User registration
+│   │   ├── files/         # File management dashboard
+│   │   └── fileinfo/      # Individual file details
+│   ├── Styles/            # Custom CSS files
+│   └── App.js             # Main application component
+├── tailwind.config.js     # Tailwind configuration
+└── package.json           # Project dependencies
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🎨 Design Features
 
-### `npm run build`
+- **Gradient Backgrounds**: Dynamic, animated gradient overlays
+- **Glassmorphism**: Modern frosted glass UI elements
+- **Custom Typography**: Kanit font family for enhanced readability
+- **Color Scheme**: Blue-focused palette with transparency effects
+- **Icons**: Comprehensive icon library for intuitive navigation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🖥️ Pages Overview
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Home (`/`)
+Landing page featuring the EtherLock branding and hero section with promotional content about blockchain security.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Sign In (`/signin`)
+User authentication page with email login functionality and glassmorphic design elements.
 
-### `npm run eject`
+### Sign Up (`/signup`)
+User registration interface for new account creation.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Files (`/files`)
+File management dashboard displaying:
+- File search functionality
+- File listing with metadata (name, size, date)
+- Clean tabular layout for easy file browsing
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### File Info (`/fileinfo`)
+Detailed file information page showing:
+- File metadata and properties
+- IPFS hash and object URL
+- File actions (share, delete, download)
+- Owner and creation details
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🚀 Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn package manager
 
-## Learn More
+### Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd etherLock2.0
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Install dependencies:
+```bash
+npm install
+```
 
-### Code Splitting
+3. Start the development server:
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Analyzing the Bundle Size
+## 📜 Available Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from Create React App (irreversible)
 
-### Making a Progressive Web App
+## 🎯 Future Enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Complete blockchain integration
+- Real file upload/download functionality
+- User authentication backend
+- IPFS integration for decentralized storage
+- Enhanced security features
+- Mobile app development
 
-### Advanced Configuration
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-### Deployment
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### `npm run build` fails to minify
+## 👨‍💻 Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Dev Chauhan**
+
+---
+
+*EtherLock 2.0 - Where Security Meets Blockchain: Elevating Your Digital Asset Protection with Our Advanced eVault Technology.*
